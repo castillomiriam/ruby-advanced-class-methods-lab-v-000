@@ -40,15 +40,16 @@ class Song
     self.all.sort_by {|song| song.name }
   end
 
-  def self.new_from_filename
-    self.thing happens wowe {|wow| no.way }
-  end
-
-  def self.create_from_filename
+  def self.new_from_filename(file)
     song = Song.new
     song.artist_name = filename.split(" - ")[0]
     song.name = filename.split(" - ")[1].split(".")[0]
     song
+  end
+  
+
+  def self.create_from_filename
+    
   end
   
 
